@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIGE LMS</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <nav class="profile">
+        <h1><a href="/">STAG LEARNING MANAGEMENT SYSTEM</a></h1>
+        <ul>
+            <li><a href="/dashboard" class="btn">Dashboard</a></li>
+            <li><a href="/logout" class="btn">Log out</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+    <center><h2>Profile Info</h2></center>
+    <br>
+    <br>
+    <div class="container">
+        <div class="items">
+            <div class="item1">
+                <p>UserName -></p>
+                <p>
+                    <%= user.name %>
+                </p>
+            </div>
+            <div class="item1">
+                <p>Email -></p>
+                <p>
+                    <%= user.email %>
+                </p>
+            </div>
+            <div class="item1">
+                <p>Role -></p>
+                <p>
+                    Student/Learner
+                </p>
+            </div>
+            <div class="item1">
+                <p>Mode -></p>
+                <p>
+                    Online
+                </p>
+            </div>
+            <div class="item1">
+                <p>Platform -></p>
+                <p>
+                    STAG LMS
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+
+    <%- include('partials/footer'); -%>
