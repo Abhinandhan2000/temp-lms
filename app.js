@@ -26,4 +26,5 @@ app.get('*', checkUser);
 app.get('/', (req, res) => res.render('home'));
 app.get('/dashboard', requireAuth, (req, res) => res.render('dashboard'));
 app.get('/profile', requireAuth, (req, res) => res.render('profile'));
+app.get('/taskmanager', requireAuth, (req, res) => res.render('taskmanager'));
 app.use(authRoutes);
